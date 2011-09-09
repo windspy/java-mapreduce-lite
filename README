@@ -1,0 +1,16 @@
+This is a map/reduce stack which is writen in java.
+
+It aims to provide a fast debuging and testing for map/reduce functions from local environment.
+
+Main ponits:
+
+1. Using inputstream as input/output of each job;
+2. Using redis to managing the computing context;
+3. Using threads to run map/reduce function, and output the progress to console;
+4. Endler which can be used to do the downstream action is added.
+
+The only dependency is jedis.
+
+Overall structure picture can be seen from http://1.wpmblog.sinaapp.com/wp-content/arc.png.
+
+You can run a wordcount in the test directory to test the project.
